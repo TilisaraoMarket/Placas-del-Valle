@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Placas del Valle</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación (debe ser igual en TODOS los archivos HTML) -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+          <div class="flex justify-between">
+              <div class="flex space-x-7">
+                  <!-- Logo/Nombre de la empresa -->
+                  <div>
+                      <a href="./index.html" class="flex items-center py-4 px-2">
+                          <span class="font-semibold text-gray-500 text-lg">Placas del Valle Gastón</span>
+                      </a>
+                  </div>
+                  <!-- Enlaces de navegación -->
+                  <div class="hidden md:flex items-center space-x-1">
+                      <a href="./index.html" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Inicio</a>
+                      <a href="./productos.html" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Productos</a>
+                      <a href="./servicios.html" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Servicios</a>
+                      <a href="./nosotros.html" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Nosotros</a>
+                      <a href="./contacto.html" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Contacto</a>
+                  </div>
+              </div>
+              <!-- Menú móvil -->
+              <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button">
+                      <svg class="w-6 h-6 text-gray-500 hover:text-blue-500"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+      </div>
+      <!-- Menú móvil desplegable -->
+      <div class="hidden mobile-menu md:hidden">
+          <ul class="">
+              <li><a href="./index.html" class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300">Inicio</a></li>
+              <li><a href="./productos.html" class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300">Productos</a></li>
+              <li><a href="./servicios.html" class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300">Servicios</a></li>
+              <li><a href="./nosotros.html" class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300">Nosotros</a></li>
+              <li><a href="./contacto.html" class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300">Contacto</a></li>
+          </ul>
+      </div>
+  </nav>
+  
+  <!-- Script para el menú móvil -->
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const btn = document.querySelector(".mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+  
+          btn.addEventListener("click", () => {
+              menu.classList.toggle("hidden");
+          });
+      });
+  </script>
+
+    <!-- Contenido Principal -->
+    <main class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Nuestros Productos</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Producto 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://via.placeholder.com/400x300" alt="Placa de Yeso Estándar" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Placa de Yeso Estándar</h3>
+                        <p class="text-gray-600 mb-4">Ideal para interiores y techos. Perfecta para construcciones residenciales y comerciales.</p>
+                        <ul class="text-sm text-gray-500 mb-4">
+                            <li>✓ Fácil instalación</li>
+                            <li>✓ Excelente acabado</li>
+                            <li>✓ Durabilidad garantizada</li>
+                        </ul>
+                        <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">
+                            Más Información
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://via.placeholder.com/400x300" alt="Placa de Yeso Resistente a la Humedad" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Placa Antihumedad</h3>
+                        <p class="text-gray-600 mb-4">Especialmente diseñada para baños, cocinas y áreas húmedas.</p>
+                        <ul class="text-sm text-gray-500 mb-4">
+                            <li>✓ Resistente al agua</li>
+                            <li>✓ Tratamiento antihongos</li>
+                            <li>✓ Mayor durabilidad</li>
+                        </ul>
+                        <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">
+                            Más Información
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://via.placeholder.com/400x300" alt="Placa de Yeso Ignífuga" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Placa Ignífuga</h3>
+                        <p class="text-gray-600 mb-4">Máxima protección contra incendios para espacios que requieren seguridad adicional.</p>
+                        <ul class="text-sm text-gray-500 mb-4">
+                            <li>✓ Resistente al fuego</li>
+                            <li>✓ Certificación de seguridad</li>
+                            <li>✓ Ideal para áreas críticas</li>
+                        </ul>
+                        <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">
+                            Más Información
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 mt-12">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-white">
+                    <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+                    <p>Email: info@placasdelvalle.com</p>
+                    <p>Teléfono: (+54 9) 2664-952-023</p>
+                </div>
+                <div class="text-white">
+                    <h3 class="text-lg font-semibold mb-4">Ubicación</h3>
+                    <p>Calle Principal 123</p>
+                    <p>Tilisarao, San Luis</p>
+                </div>
+                <div class="text-white">
+                    <h3 class="text-lg font-semibold mb-4">Horario</h3>
+                    <p>Lunes a Viernes: 9:00 - 18:00</p>
+                    <p>Sábados: 9:00 - 13:00</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2025 Placas del Valle. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
